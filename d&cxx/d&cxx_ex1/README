@@ -1,0 +1,66 @@
+Compile Sintaxe Digital Mars D: 
+
+bash4.3$ dmd triangle.d
+bash4.3$ ./triangle
+ou
+bash4.3$ dmd -oftri triangle.d
+bash4.3$ ./tri
+ou 
+bash4.3$ rdmd triangle
+
+
+ou para otimizar:
+
+bash4.3$ dmd -O -inline -release triangle.d
+ou
+bash4.3$ rdmd -O -inline -release triangle
+
+ou adicione alguma das linhas ao codigo antes da diretiva import.  
+
+#!/usr/bin/env dmd -run
+ou
+#!/usr/bin/env rdmd 
+
+faça:
+
+bash4.3$ chmod a+x triangle.d  
+
+bash4.3$ ./triangle.d
+
+
+ou adicione a seguinte antes da diretiva import para compilar na execução.
+
+#!/usr/bin/env dmd 
+
+faça:
+
+bash4.3$ chmod a+x triangle.d 
+
+bash4.3$ ./triangle.d
+
+bash4.3$ ./triangle
+
+
+
+Compile Sintaxe C++:
+
+bash4.3$ g++ -otri triangle.cxx
+
+bash4.3$ ./tri
+
+
+ou para otimizar:
+
+bash4.3$ g++ -O3 -otri triangle.cxx
+
+Programa criado em D com a finalidade de mostrar a diferença 
+na sintaxe e desenvolvimento entre duas das mais usadas e poderosas 
+linguagems orientadas a objetos Java, C++ e D (Digital Mars)
+O objetivo do grupo é estudar as linguagems C C++ e D porém 
+a Linguagem da Digital Mars é multiparadigma com sitaxe baseada em C/C++,
+objetivando criar um C++ melhor. 
+Note que ambos os codigos em D e Java possuem o mesmo numero de linhas 
+lógicas e sintaxe identica ao java mudando apenas a forma,
+com que se usa o construtor e a chamada de bibliotecas parecida com o Python, 
+suportando tambem o uso de aliases da mesma forma como o python,
+o mesmo esta baseado na mesma sintaxe do java. 
