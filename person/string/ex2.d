@@ -40,11 +40,11 @@ class pessoa
  int idade;
  float altura;
 
-public:
- void setNome()
- {
-   readp(this.nome,"Digite Seu nome: ");
- }
+ public:
+void setNome()
+{
+ readp(this.nome,"Digite Seu nome: ");
+}
  
 void setIdade()
 {
@@ -75,7 +75,7 @@ string getNome()
 
 void main()
 {
-  pessoa p = new pessoa();
+ pessoa p = new pessoa();
   
  p.setNome();
  p.setIdade();
