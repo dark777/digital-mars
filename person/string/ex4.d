@@ -4,7 +4,7 @@ import std.traits;
 import std.range;
 import std.algorithm;
 
-auto read(S)(ref S s, string message)
+auto readp(S)(ref S s, string message)
 if (isSomeString!S) {
     import std.string : strip;
     writef("%s: ", message);
@@ -12,9 +12,8 @@ if (isSomeString!S) {
     return s;
 }
 
-auto read(S)(ref S s, string message)
-if (isStaticArray!S &&
-    isSomeChar!(ElementType!S)) {
+auto readp(S)(ref S s, string message)
+if (isStaticArray!S && isSomeChar!(ElementType!S)) {
 
     string tmp;
     read(tmp, message);
@@ -32,6 +31,6 @@ if (isStaticArray!S &&
 void main()
 {
     char[50] message;
-    read(message,"Digite Seu nome");
+    readp(message,"Digite Seu nome");
     writeln(message);
 } 
