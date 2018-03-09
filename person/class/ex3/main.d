@@ -4,7 +4,7 @@ import include.adress; // Not Deprecated Adrees OK
 //import include.pes.pessoa; // Deprecated Pessoa OK
 //import include.end.endereco; //Deprecated Endereco OK
 
-public static void main(string[] args)
+static void main(string[] args)
 {
  Pessoa[] vetor = new Pessoa[1];
         
