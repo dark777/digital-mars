@@ -18,20 +18,22 @@ Combinando todos os três:
 */
 
 auto readp(T)(ref T t, string message)
-if (!isSomeString!T) {
-    writef("\n\t%s: ", message);
-    readf(" %s", &t);
-    return t;
-    /* este readp irá ler apenas int,double e float */
+if(!isSomeString!T)
+{
+ writef("\n\t%s: ", message);
+  readf(" %s", &t);
+  return t;
+ /* este readp irá ler apenas int,double e float */
 }
 
 auto readp(S)(ref S s, string message)
-if (isSomeString!S) {
-    import std.string : strip;  
-    writef("\n\t%s: ", message);
-    s = readln().strip();
-    return s;
-    /* este readp irá ler apenas strings */
+if(isSomeString!S)
+{
+ import std.string : strip;  
+  writef("\n\t%s: ", message);
+  s = readln().strip();
+  return s;
+ /* este readp irá ler apenas strings */
 }
 
 class pessoa

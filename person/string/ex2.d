@@ -18,18 +18,20 @@ Combinando todos os três:
 */
 
 auto readp(T)(ref T t, string message)
-if (!isSomeString!T) {
-    writef("%s", message);
-    readf(" %s", &t);
-    return t;
+if(!isSomeString!T)
+{
+ writef("%s", message);
+  readf(" %s", &t);
+ return t;
 }
 
 auto readp(S)(ref S s, string message)
-if (isSomeString!S) {
-    import std.string : strip;
-    writef("%s", message);
-    s = readln().strip();
-    return s;
+if(isSomeString!S)
+{
+ import std.string : strip;
+  writef("%s", message);
+  s = readln().strip();
+ return s;
 }
 
 
