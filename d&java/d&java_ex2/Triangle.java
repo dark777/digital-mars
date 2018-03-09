@@ -51,4 +51,4 @@ public class Triangle
     tri5.display();
    tri6.display();
   }
-} 
+}

@@ -42,7 +42,7 @@ public class Triangle
   }
 }
 
-public static void main()  //ou pode se usar tambem static void main
+static void main()  //ou pode se usar tambem static void main
 {  
  Triangle tri3 = new Triangle(3);
   Triangle tri4 = new Triangle(4);
