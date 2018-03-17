@@ -95,7 +95,7 @@ class GnuQueBacana: String
 
 void main()
 {
-  GnuQueBacana gnu = new GnuQueBacana();
-
-  writeln(gnu.stalman(), gnu.torvald(), gnu.stallman(), gnu.torvalds());
+ GnuQueBacana gnu = new GnuQueBacana();
+ 
+ writeln(gnu.stalman(), gnu.torvald(), gnu.stallman(), gnu.torvalds());
 }
